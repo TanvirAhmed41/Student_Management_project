@@ -39,8 +39,16 @@ public class Student {
 public class MyClass{
     public static void Main (string[] args){
         try{
+            //created two object
             Student student1 = new Student("Tanvir Ahmed", new DateTime (1997,05,14), "CSE41");
             Student student2 = new Student("Partha pratim",new DateTime(2001,06,19),"CSE42");
+
+            //Display student details
+            Console.WriteLine($"Student Details");
+            Console.WriteLine($"-------------------");
+            Console.WriteLine($"Name:{student1.Name},Date of Birth:{student1.DateOfBirth},Roll Number:{student1.RollNumber}");
+            Console.WriteLine($"-------------------");
+            Console.WriteLine($"Name:{student2.Name},Date of Birth:{student2.DateOfBirth},Roll Number:{student2.RollNumber}");
         }
         catch(Exception ex){
             Console.WriteLine($"Error: {ex.Message}");
